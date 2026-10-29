@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Form Here</title>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+
+    <form onsubmit="return validateForm()">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br><br>
+
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function togglePassword() 
+            {
+            let passInput = document.getElementById("password");
+
+            if (passInput.type === "password") {
+                passInput.type = "text";
+            } else {
+                passInput.type = "password";
+            }
+            }
+            
+    </script>
+
+</body>
+</html>

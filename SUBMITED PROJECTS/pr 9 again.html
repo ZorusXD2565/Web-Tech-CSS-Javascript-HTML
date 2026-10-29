@@ -1,0 +1,30 @@
+<html>
+<html>
+<head>
+    <title>Text Growing and Shrinking</title>
+</head>
+<body>
+
+    <h2>Text Growing and Shrinking in JavaScript</h2>
+
+    <button onclick="growText()">Grow (+)</button>
+    <button onclick="shrinkText()">Shrink (-)</button>
+
+    <p id="myText">This text will change size when you click the buttons!</p>
+
+    <script>
+        let fontSize = 20;
+
+        function growText() {
+            fontSize = fontSize + 4;
+            document.getElementById("myText").style.fontSize = fontSize + "px";
+        }
+
+        function shrinkText() {
+            fontSize = fontSize - 4;
+            document.getElementById("myText").style.fontSize = fontSize + "px";
+        }
+    </script>
+
+</body>
+</html>
